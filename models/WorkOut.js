@@ -16,10 +16,6 @@ const workoutSchema = new Schema ({
                 type: String,
                 trim: true,
                 required: "Give a name for your exercise.",
-                validate: {
-                    minlength: 1,
-                    maxlength: 50,
-                }
             },
             duration: {
                 type: Number,
@@ -44,3 +40,7 @@ const workoutSchema = new Schema ({
         }
     ]
 })
+
+const WorkOut = mongoose.model("Workout", workoutSchema)
+
+module.exports = WorkOut
