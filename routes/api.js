@@ -37,4 +37,14 @@ router.post("/api/workouts", function (req, res) {
     })
 })
 
+router.get("/api/workouts/range", function(req, res) {
+    WorkOut.find({}).then(dbWorkOut => {
+        console.log("All workouts: ", dbWorkOut)
+        res.json(dbWorkOut)
+    })
+    .catch(err => {
+        res.status(400).json(err)
+    })
+})
+
 module.exports = router
