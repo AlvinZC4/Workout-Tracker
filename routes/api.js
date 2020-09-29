@@ -25,4 +25,16 @@ router.put("/api/workouts/:id", function(req, res) {
 
 })
 
+router.post("/api/workouts", function (req, res) {
+    const newWorkout = req.body
+    console.log("new workout: ", newWorkout)
+    WorkOut.create(newWorkout).then(dbWorkOut => {
+        console.log("new workout: ", dbWorkOut)
+        res.json(dbWorkOut)
+    })
+    .catch(err => {
+        res.status(400).json(err)
+    })
+})
+
 module.exports = router
