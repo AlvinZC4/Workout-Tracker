@@ -23,7 +23,17 @@
 
   ## How to Use This Application
 
-  To begin click the New Workout button; this prompt the user to create an exercise to add to thier new workout. The exercise can be either for resistance or cardio, from their the user gives the exercise a name and fills in other information about the exercise. Once an exercise has been created the user can either add another exercise or view the statistics for all of their workouts and exercises. If the user already has workouts saved in the application then they can add additional exercises to their most recent workout.
+  To begin click the New Workout button; this prompt the user to create an exercise to add to thier new workout. 
+  
+  ![Index Page](/assets/images/Fitness_Tracker_index.png)
+
+  ![Create Exercise](/assets/images/Fitness_Tracker_create.png)
+
+  The exercise can be either for resistance or cardio, from their the user gives the exercise a name and fills in other information about the exercise. Once an exercise has been created the user can either add another exercise or view the statistics for all of their workouts and exercises. 
+  
+  ![Workout Statistics](/assets/images/Fitness_Tracker_stats.png)
+  
+  If the user already has workouts saved in the application then they can add additional exercises to their most recent workout.
 
   ## Test Code
 
